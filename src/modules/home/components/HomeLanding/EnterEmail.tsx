@@ -1,4 +1,4 @@
-import { Container, Stack, Heading, Text, Button, Flex, Box, Input } from '@chakra-ui/react';
+import { Container, Stack, Heading, Text, Button, Input } from '@chakra-ui/react';
 
 export const EnterEmail = () => {
   return (
@@ -6,9 +6,8 @@ export const EnterEmail = () => {
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
-        px={{ base: 300 }}
         py={{ base: 20, md: 28 }}
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: 'column', md: 'column' }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
@@ -42,9 +41,17 @@ export const EnterEmail = () => {
             categorize them, and even sync them in the cloud so you can use them anywhere. All that
             is free!
           </Text>
-          <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
+          <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'column' }}>
+            <Input
+              maxW="70%"
+              type="email"
+              bg="#ebebeb"
+              size="md"
+              placeholder="Digite seu melhor email..."
+            />
             <Button
               rounded={'full'}
+              w="10rem"
               size={'lg'}
               fontWeight={'normal'}
               px={6}
@@ -56,17 +63,6 @@ export const EnterEmail = () => {
             </Button>
           </Stack>
         </Stack>
-        <Flex flex={1} justify={'center'} align={'center'} position={'relative'} w={'full'}>
-          <Box position={'relative'} width={'full'} overflow={'hidden'}>
-            <Input
-              type="email"
-              bg="#ebebeb"
-              w="2xl"
-              h="50px"
-              placeholder="Digite seu melhor email..."
-            />
-          </Box>
-        </Flex>
       </Stack>
     </Container>
   );

@@ -1,23 +1,12 @@
 import { ArrowForwardIcon } from '@chakra-ui/icons';
-import {
-  Container,
-  Stack,
-  Heading,
-  Text,
-  Button,
-  Flex,
-  Box,
-  Image,
-  IconButton,
-} from '@chakra-ui/react';
+import { Container, Stack, Heading, Text, Button, Flex, Box, Image } from '@chakra-ui/react';
 
 export const CreditCard = () => {
   return (
     <Container maxW={'full'} bg="#f1f0f0">
       <Stack
         align={'center'}
-        spacing={{ base: 8, md: 10 }}
-        px={{ base: 300 }}
+        spacing={{ base: 5, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}
       >
@@ -72,22 +61,11 @@ export const CreditCard = () => {
           <Box
             position={'relative'}
             rounded={'2xl'}
-            width={'full'}
+            width={'md'}
             boxShadow={'2xl'}
             overflow={'hidden'}
             height={'400px'}
           >
-            <IconButton
-              aria-label={'Play Button'}
-              variant={'ghost'}
-              _hover={{ bg: 'transparent' }}
-              size={'lg'}
-              color={'white'}
-              position={'absolute'}
-              left={'50%'}
-              top={'50%'}
-              transform={'translateX(-50%) translateY(-50%)'}
-            />
             <Image
               alt={'Hero Image'}
               fit={'cover'}
