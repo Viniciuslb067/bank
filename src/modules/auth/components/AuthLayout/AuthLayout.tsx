@@ -28,7 +28,7 @@ export const AuthLayout = ({ children, title, subtitle }: AuthLayoutProps) => {
           <Flex
             direction="column"
             center
-            w="70%"
+            w={['100%', '70%']}
             bg="white"
             mx="auto"
             py={8}
