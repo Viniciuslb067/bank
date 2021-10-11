@@ -43,7 +43,7 @@ export const Navbar = () => {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'center' }}>
+        <Flex flex={{ base: 1 }} align="center" justify={{ base: 'center', md: 'center' }}>
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}

@@ -1,5 +1,7 @@
-import { Container, Heading, Text, Flex } from '@chakra-ui/react';
+import { Container, Heading, Text, Flex, Box } from '@chakra-ui/react';
 import PillPity from 'pill-pity';
+
+import { Logo } from '../../../../components/common/Logo';
 
 type AuthLayoutProps = {
   children: React.ReactNode;
@@ -19,11 +21,14 @@ export const AuthLayout = ({ children, title, subtitle }: AuthLayoutProps) => {
         w="100%"
         minH="100vh"
         pb="5%"
-        pt={10}
+        pt={2}
         bgColor="brand.600"
         patternFill="whiteAlpha.300"
         patternOpacity={0.3}
       >
+        <Box color="white" fontWeight="bold" fontSize="3xl" maxW="3xs" mx="auto">
+          <Logo size="200" />
+        </Box>
         <Container maxW="container.md">
           <Flex
             direction="column"

@@ -1,12 +1,11 @@
-import { Image, ImageProps, Flex, Text } from '@chakra-ui/react';
+import { Image, Flex, ImageProps } from '@chakra-ui/react';
 
-import brandLogo from '../../../assets/logo.png';
+import brandLogo from '../../../assets/logo.svg';
 
-export const Logo = (props: ImageProps) => {
+export const Logo = ({ size }, props: ImageProps) => {
   return (
-    <Flex align="center">
-      <Image mr={4} boxSize="250px" src={brandLogo} {...props} />
-      <Text>Amazon Bank</Text>
+    <Flex direction="column" align="center">
+      <Image boxSize={`${size}px`} src={brandLogo} {...props} />
     </Flex>
   );
 };
