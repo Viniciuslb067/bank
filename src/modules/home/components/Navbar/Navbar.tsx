@@ -58,7 +58,7 @@ export const Navbar = () => {
         </Flex>
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
+          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'/entrar'}>
             Login
           </Button>
           <Button
