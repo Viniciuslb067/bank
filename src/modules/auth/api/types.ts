@@ -26,3 +26,16 @@ export type UserResponse = {
   accessToken: string;
   user: AuthUser;
 };
+
+export type getUserProfile = {
+  name: string;
+  password: string;
+  confirmPassword: string;
+};
+
+export type RegisterCredentials = {
+  name: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+};
