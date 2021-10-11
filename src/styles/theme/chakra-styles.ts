@@ -1,15 +1,15 @@
 import { mode, GlobalStyleProps } from '@chakra-ui/theme-tools';
 
-// import * as externals from './externals';
+import * as externals from './externals';
 
-// const externalsStyles = () =>
-//   Object.values(externals).reduce(
-//     (acc, cur) => ({
-//       ...acc,
-//       ...(typeof cur === 'function' ? cur() : cur),
-//     }),
-//     {},
-//   );
+const externalsStyles = () =>
+  Object.values(externals).reduce(
+    (acc, cur) => ({
+      ...acc,
+      ...(typeof cur === 'function' ? cur() : cur),
+    }),
+    {},
+  );
 
 export const styles = {
   global: (props: GlobalStyleProps) => ({
@@ -28,5 +28,6 @@ export const styles = {
       pr: 'safe-right',
       pb: 'safe-bottom',
     },
+    ...externalsStyles(),
   }),
 };
