@@ -34,7 +34,7 @@ export default {
       customVariant({
         bg: mode('brand.200', 'brand.300')(props),
         bgHover: mode('brand.300', 'brand.400')(props),
-        bgActive: mode('brand.700', 'brand.500')(props),
+        bgActive: mode('brand.300', 'brand.400')(props),
         color: mode('white', 'brand.900')(props),
         boxShadowFocus: 'outline-brand',
       }),
